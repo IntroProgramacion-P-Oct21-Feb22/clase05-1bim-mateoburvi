@@ -17,7 +17,8 @@ public class Ejemplo03 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         //
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
@@ -30,18 +31,22 @@ public class Ejemplo03 {
         System.out.println("Ingrese la población del país");
         extension = entrada.nextDouble();
         
+        entrada.nextLine();
+        
         System.out.println("Ingrese nombre del país");
         nombrePais = entrada.nextLine();
         
         System.out.println("Ingrese la edad promedio del país");
         promedioEdad = entrada.nextDouble();
+        
+        entrada.nextLine();
                 
         System.out.println("Ingrese capital del país");
         capitalPais = entrada.nextLine();
         
         System.out.printf("Datos de país\n\tNombre:%s\n\tCapital:%s"
                 + "\n\tPoblación:%.2f\n\tEdad promedio: %.2f\n", 
-                nombrePais, capitalPais, extension);
+                nombrePais, capitalPais, extension, promedioEdad);
         
     }
     

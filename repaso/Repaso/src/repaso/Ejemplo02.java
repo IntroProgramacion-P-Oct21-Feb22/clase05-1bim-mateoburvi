@@ -25,9 +25,8 @@ public class Ejemplo02 {
         String nombrePais;
         String capitalPais;
         double extension;
+        double poblacion;
         
-        System.out.println("Ingrese la población del país");
-        extension = entrada.nextDouble();
         
         System.out.println("Ingrese nombre del país");
         nombrePais = entrada.nextLine();
@@ -35,6 +34,10 @@ public class Ejemplo02 {
         System.out.println("Ingrese capital del país");
         capitalPais = entrada.nextLine();
         
+        
+        System.out.println("Ingrese la población del país");
+        extension = entrada.nextDouble();
+                                  
         System.out.printf("Datos de país\n\tNombre:%s\n\tCapital:%s"
                 + "\n\tPoblación:%.2f\n", nombrePais, capitalPais, extension);
         
